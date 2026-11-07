@@ -4,9 +4,9 @@ Warm taupe, charcoal and quiet contrast. An offline, dependency-free Obsidian th
 
 [中文说明](README.zh-CN.md) · [Download](https://github.com/xwtaidev/obsidian-duskstone-theme/releases/latest) · [Changelog](CHANGELOG.md)
 
-![Duskstone light mode — browser preview](images/light.png)
+![Duskstone light mode — Obsidian 1.14.4 on macOS](images/light.png)
 
-![Duskstone dark mode — browser preview](images/dark.png)
+![Duskstone dark mode — Obsidian 1.14.4 on macOS](images/dark.png)
 
 ## Features
 
@@ -44,7 +44,7 @@ Open [preview/index.html](preview/index.html) in a browser, or run `python3 -m h
 
 The preview uses the real `theme.css` with a browser-only layout scaffold. It supports light/dark, reading/editing samples, tasks, chapter search (`Cmd/Ctrl + P`) and sidebar controls. Editing is a style sample and does not parse or save Markdown.
 
-Copy [这样的夜晚.md](examples/这样的夜晚.md) into a test vault to inspect real Obsidian rendering. Screenshots above are **browser previews**, not captures of a user's vault. The store thumbnail is [screenshot.png](screenshot.png), sized 512 × 288.
+Copy [这样的夜晚.md](examples/这样的夜晚.md) into a test vault to inspect real Obsidian rendering. Screenshots above are **real captures of Obsidian 1.14.4 on macOS**, taken in a test vault with the sample note. The interactive browser preview is a separate layout simulation. The store thumbnail is [screenshot.png](screenshot.png), sized 512 × 288.
 
 ## Readability and compatibility
 
@@ -57,7 +57,7 @@ Default WCAG contrast ratios against the main note background:
 | Links | 5.37 : 1 | 6.01 : 1 |
 | Primary button text/background | 7.68 : 1 | 7.03 : 1 |
 
-Verified in browser fixtures with Obsidian 1.12.4's native stylesheet, and visually checked in the Obsidian 1.14.4 macOS test vault for light mode, reading/editing and sidebar corner states. The browser preview was checked at 320–1440px, including search and keyboard controls. Print colors and native accent overrides were also checked.
+Verified in browser fixtures with Obsidian 1.12.4's native stylesheet, and visually checked in the Obsidian 1.14.4 macOS test vault for light/dark modes, reading/editing and sidebar corner states. The browser preview was checked at 320–1440px, including search and keyboard controls. Print colors and native accent overrides were also checked.
 
 iOS, Android, every split/stacked layout and third-party plugin combination have not been fully tested. Mobile uses the native layout; graph and Canvas are supplied with color variables. Custom accents or snippets may change contrast. Please [report issues](https://github.com/xwtaidev/obsidian-duskstone-theme/issues) with your Obsidian version, platform and a screenshot.
 

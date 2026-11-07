@@ -4,9 +4,9 @@
 
 [English](README.md) · [下载发行版](https://github.com/xwtaidev/obsidian-duskstone-theme/releases/latest) · [更新记录](CHANGELOG.md)
 
-![浅色模式：浏览器模拟预览](images/light.png)
+![浅色模式：Obsidian 1.14.4 macOS 实机截图](images/light.png)
 
-![深色模式：浏览器模拟预览](images/dark.png)
+![深色模式：Obsidian 1.14.4 macOS 实机截图](images/dark.png)
 
 ## 特点
 
@@ -43,11 +43,11 @@
 
 支持深浅色、阅读／编辑样式、搜索（`Cmd/Ctrl + P`）、任务勾选和侧栏切换。编辑样例不解析或保存 Markdown。页面直接引用 `theme.css`，由 `preview.css` 模拟布局。
 
-将 [这样的夜晚.md](examples/这样的夜晚.md) 复制到测试库，可检查实机样式。上方截图均为浏览器模拟；市场缩略图是 [screenshot.png](screenshot.png)，尺寸 512 × 288。
+将 [这样的夜晚.md](examples/这样的夜晚.md) 复制到测试库，可检查实机样式。上方截图均来自 **Obsidian 1.14.4 macOS 实机**，使用测试库中的示例笔记；交互式浏览器预览另为布局模拟。市场缩略图是 [screenshot.png](screenshot.png)，尺寸 512 × 288。
 
 默认配色正文对比度：浅色 **8.45:1**、深色 **9.42:1**；链接分别为 **5.37:1** 和 **6.01:1**。
 
-已使用 Obsidian 1.12.4 原生样式进行浏览器检查，并在本机 Obsidian 1.14.4 macOS 测试库查看了浅色、阅读／编辑与侧栏展开／折叠效果。浏览器预览检查了 320–1440px、搜索、键盘操作、打印配色和自定义强调色。
+已使用 Obsidian 1.12.4 原生样式进行浏览器检查，并在本机 Obsidian 1.14.4 macOS 测试库查看了深浅色、阅读／编辑与侧栏展开／折叠效果。浏览器预览检查了 320–1440px、搜索、键盘操作、打印配色和自定义强调色。
 
 尚未完成 iOS／Android、所有分屏／堆叠布局和第三方插件组合验收。关系图与 Canvas 提供变量配色。自定义强调色或 CSS 片段可能改变对比度。[反馈问题](https://github.com/xwtaidev/obsidian-duskstone-theme/issues) 时请附上 Obsidian 版本、平台和截图。
 
