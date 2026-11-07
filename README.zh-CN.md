@@ -20,7 +20,7 @@
 
 需要 **Obsidian 1.10.6 或更高版本**。目前尚未上架社区主题市场。
 
-1. 从 [最新 Release](https://github.com/xwtaidev/obsidian-duskstone-theme/releases/latest) 下载 `Duskstone-1.0.0.zip`。
+1. 从 [最新 Release](https://github.com/xwtaidev/obsidian-duskstone-theme/releases/latest) 下载 `Duskstone-1.0.1.zip`。
 2. 解压到笔记库的 `.obsidian/themes/`，确认结构如下：
 
    ```text

@@ -21,7 +21,7 @@ Warm taupe, charcoal and quiet contrast. An offline, dependency-free Obsidian th
 
 Requires **Obsidian 1.10.6+**. Duskstone is not yet listed in Community Themes.
 
-1. Download `Duskstone-1.0.0.zip` from the [latest release](https://github.com/xwtaidev/obsidian-duskstone-theme/releases/latest).
+1. Download `Duskstone-1.0.1.zip` from the [latest release](https://github.com/xwtaidev/obsidian-duskstone-theme/releases/latest).
 2. Extract it into your vault's `.obsidian/themes/` directory:
 
    ```text
