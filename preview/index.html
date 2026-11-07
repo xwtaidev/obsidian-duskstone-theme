@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Duskstone — Obsidian 主题预览</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="preview.css">
+  <link rel="stylesheet" href="../theme.css">
+  <script src="preview.js" defer></script>
+</head>
+<body class="theme-light preview">
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="file" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8zm0 0v5h5M8 13h8M8 17h6"/></symbol>
+    <symbol id="folder" viewBox="0 0 24 24"><path d="M3 6h6l2 2h10v12H3z"/></symbol>
+    <symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11z"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></symbol>
+    <symbol id="chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="book" viewBox="0 0 24 24"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1zm0 0v15"/></symbol>
+    <symbol id="edit" viewBox="0 0 24 24"><path d="m15 4 5 5M3 21l2-7L16 3a2 2 0 0 1 3 0l2 2a2 2 0 0 1 0 3L10 19zM5 14l5 5"/></symbol>
+    <symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v1"/></symbol>
+  </svg>
+
+  <header class="preview-header">
+    <div class="preview-brand"><svg class="icon brand-icon"><use href="#moon"/></svg><div><strong>Duskstone</strong><span>暖灰米色与深蓝炭灰 · Obsidian 主题</span></div></div>
+    <div class="preview-tools">
+      <button id="view-toggle" aria-pressed="false"><svg class="icon"><use href="#edit"/></svg><span>编辑预览</span></button>
+      <button id="theme-toggle" aria-pressed="false"><svg class="icon"><use href="#moon"/></svg><span>切换深色</span></button>
+    </div>
+  </header>
+
+  <div class="demo-shell app-container">
+    <div class="titlebar"><span>Duskstone</span><span>此刻的笔记</span></div>
+    <div class="workspace">
+      <nav class="workspace-ribbon" aria-label="工具栏">
+        <button class="side-dock-ribbon-action is-active" id="files-toggle" aria-label="切换文件列表" aria-expanded="true"><svg class="icon"><use href="#folder"/></svg></button>
+        <button class="side-dock-ribbon-action" data-search aria-label="搜索笔记"><svg class="icon"><use href="#search"/></svg></button>
+        <button class="side-dock-ribbon-action bottom-action" id="ribbon-theme" aria-label="切换深浅色"><svg class="icon"><use href="#moon"/></svg></button>
+      </nav>
+
+      <aside class="mod-left-split" id="file-sidebar" aria-label="文件列表">
+        <div class="vault-name">此刻的笔记<small>A QUIET PLACE TO THINK</small></div>
+        <button class="sidebar-search" data-search><svg class="icon"><use href="#search"/></svg><span>查找笔记</span><kbd>⌘ P</kbd></button>
+        <div class="nav-folder-title"><svg class="icon down"><use href="#chevron"/></svg><span>日常</span></div>
+        <div class="nav-folder-children">
+          <a class="nav-file-title is-active" href="#note-top"><svg class="icon"><use href="#file"/></svg>这样的夜晚</a>
+          <a class="nav-file-title" href="#small-things"><svg class="icon"><use href="#file"/></svg>把小事收好</a>
+          <a class="nav-file-title" href="#tomorrow"><svg class="icon"><use href="#file"/></svg>留给明天</a>
+        </div>
+        <div class="nav-folder-title"><svg class="icon down"><use href="#chevron"/></svg><span>收藏</span></div>
+        <div class="nav-folder-children"><a class="nav-file-title" href="#palette"><svg class="icon"><use href="#file"/></svg>夜晚的颜色</a><a class="nav-file-title" href="#code"><svg class="icon"><use href="#file"/></svg>一段代码</a></div>
+        <div class="sidebar-bottom"><svg class="icon"><use href="#moon"/></svg><span>慢一点，也没有关系。</span></div>
+      </aside>
+
+      <main class="mod-root">
+        <div class="workspace-tab-header-container">
+          <div class="workspace-tab-header-container-inner">
+            <div class="workspace-tab-header is-active"><svg class="icon"><use href="#file"/></svg><span>这样的夜晚</span></div>
+            <a class="workspace-tab-header" href="#palette"><svg class="icon"><use href="#file"/></svg><span>夜晚的颜色</span></a>
+          </div>
+          <button class="workspace-tab-header-tab-list" data-search aria-label="查找笔记"><svg class="icon"><use href="#search"/></svg></button>
+        </div>
+        <div class="workspace-leaf-content" data-type="markdown">
+          <div class="view-header"><button id="mobile-files" class="icon-button" aria-label="打开文件列表" aria-expanded="false"><svg class="icon"><use href="#menu"/></svg></button><span>日常 <span class="breadcrumb-separator">/</span> 这样的夜晚</span><button class="icon-button" id="header-view-toggle" aria-label="切换阅读与编辑预览"><svg class="icon"><use href="#book"/></svg></button></div>
+          <div class="view-content" id="note-scroller">
+            <article class="markdown-preview-view markdown-rendered" id="reading-pane">
+              <div class="note-kicker" id="note-top">NOTES AFTER HOURS <span>07 NOV 2026</span></div>
+              <div class="inline-title">这样的夜晚</div>
+              <div class="metadata-container"><span class="metadata-property-key">日期</span><span>2026-11-07</span><span class="metadata-property-key">标签</span><span><a class="tag" href="#small-things">#日常</a> <a class="tag" href="#palette">#灵感</a></span></div>
+              <p class="opening">灯光调暗一点，把思绪留在这里。</p>
+              <p>窗外渐渐安静，桌上还有半杯温水。没有急着完成的事，只有一些想记下来的片段。<strong>给文字一点空间，也给自己一点时间。</strong></p>
+              <blockquote><p>有些念头，适合在这样的夜晚慢慢写下来。</p></blockquote>
+              <h2 id="small-things">把小事收好</h2>
+              <p>从一段 <a class="internal-link" href="#tomorrow">未完成的想法</a> 开始，用链接把它们串起来。遇到值得重读的句子，就留下一处 <mark>温柔的标记</mark>。</p>
+              <div class="callout" data-callout="note"><div class="callout-title"><svg class="icon"><use href="#info"/></svg><span>今晚的提醒</span></div><div class="callout-content"><p>不必一次想清楚所有的事。先写下来，等下一次打开时，再接着想。</p></div></div>
+              <h2 id="tomorrow">留给明天</h2>
+              <ul class="contains-task-list"><li class="task-list-item is-checked"><label><input type="checkbox" checked>整理今天的阅读摘记</label></li><li class="task-list-item"><label><input type="checkbox">把一个想法写成完整的段落</label></li><li class="task-list-item"><label><input type="checkbox">留一页空白，给明天的自己</label></li></ul>
+              <h2 id="palette">夜晚的颜色</h2>
+              <table><thead><tr><th>颜色</th><th>原始色值</th><th>在笔记里</th></tr></thead><tbody><tr><td>暖灰米色</td><td><code>#D2C9BF</code></td><td>浅色内容区</td></tr><tr><td>深蓝炭灰</td><td><code>#30343E</code></td><td>标签栏与深色底</td></tr><tr><td>雾白</td><td><code>#EBEBEB</code></td><td>非活动标签文字</td></tr></tbody></table>
+              <h3 id="code">一段代码，一点秩序</h3>
+              <pre><code><span class="token comment">// 记录此刻，再继续往前。</span>
+<span class="token keyword">const</span> evening = {
+  title: <span class="token string">"Duskstone"</span>,
+  thoughts: [<span class="token string">"阅读"</span>, <span class="token string">"书写"</span>],
+  quiet: <span class="token boolean">true</span>
+};</code></pre>
+              <p>支持 <code>行内代码</code>，也支持 <a class="external-link" href="https://obsidian.md/">外部链接</a>。颜色安静，重点清楚。</p>
+              <hr><p class="note-end">今天就写到这里。</p>
+            </article>
+            <section class="markdown-source-view mod-cm6" id="editing-pane" hidden aria-label="Markdown 编辑样式示意">
+              <div class="note-kicker">MARKDOWN <span>编辑样式示意</span></div>
+              <div class="cm-editor"><div class="cm-content" contenteditable="true" role="textbox" aria-label="可编辑的 Markdown 样式示例" aria-multiline="true" spellcheck="false">
+                <div class="cm-line HyperMD-header HyperMD-header-1"><span class="cm-formatting"># </span><span class="cm-header cm-header-1">这样的夜晚</span></div>
+                <div class="cm-line"><br></div><div class="cm-line">灯光调暗一点，把思绪留在这里。</div>
+                <div class="cm-line">给文字一点空间，也给自己<span class="cm-strong">**一点时间**</span>。</div>
+                <div class="cm-line"><br></div>
+                <div class="cm-line HyperMD-header HyperMD-header-2"><span class="cm-formatting">## </span><span class="cm-header cm-header-2">把小事收好</span></div>
+                <div class="cm-line">用 <span class="cm-hmd-internal-link">[[未完成的想法]]</span> 连接零散的片段。</div>
+                <div class="cm-line">留下一处 <span class="cm-highlight">==温柔的标记==</span>。</div>
+                <div class="cm-line"><br></div><div class="cm-line HyperMD-quote"><span class="cm-formatting">&gt; </span>不必一次想清楚所有的事。</div>
+                <div class="cm-line"><br></div><div class="cm-line"><span class="cm-formatting">- [x] </span>整理今天的阅读摘记</div>
+                <div class="cm-line"><span class="cm-formatting">- [ ] </span>留一页空白，给明天的自己</div>
+                <div class="cm-line"><br></div><div class="cm-line">今天的状态：<span class="cm-inline-code">`quiet: true`</span></div>
+              </div></div>
+              <p class="sample-note">此处可修改文字，刷新后恢复。仅展示样式，不解析或保存 Markdown。</p>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <aside class="mod-right-split" aria-label="大纲和配色">
+        <div class="sidebar-heading">大纲<span>OUTLINE</span></div>
+        <nav class="outline"><a href="#small-things">把小事收好</a><a href="#tomorrow">留给明天</a><a href="#palette">夜晚的颜色</a><a class="outline-child" href="#code">一段代码，一点秩序</a></nav>
+        <div class="palette-panel"><div class="sidebar-heading">原主题配色</div><div class="palette-swatches"><span class="swatch-frame" title="#30343E 深蓝炭灰"></span><span class="swatch-taupe" title="#D2C9BF 暖灰米色"></span><span class="swatch-mist" title="#EBEBEB 雾白"></span></div><p>暖色的纸，冷色的边框。<br>熟悉的夜晚，另一种书写方式。</p><a href="https://chromewebstore.google.com/detail/nights-like-this/kpjgpagkiaepkmeamgjaccjgfjgpncac">Chrome 原主题 · Tatsze</a></div>
+      </aside>
+    </div>
+    <footer class="status-bar"><span>Duskstone</span><span id="mode-name">暖灰 · 浅色</span><span id="view-name">阅读预览</span></footer>
+  </div>
+  <footer class="preview-footer"><span>独立 Obsidian 配色适配 · 浏览器模拟预览</span><a href="../README.md">安装说明</a></footer>
+  <button class="sidebar-scrim" id="sidebar-scrim" aria-label="关闭文件列表" hidden></button>
+  <dialog class="prompt" id="search-dialog" aria-labelledby="search-title"><div class="dialog-heading"><h2 id="search-title">查找笔记章节</h2><button class="icon-button" id="close-search" aria-label="关闭搜索"><svg class="icon"><use href="#close"/></svg></button></div><label for="note-search">标题关键词</label><input type="search" id="note-search" placeholder="这样的夜晚、夜晚的颜色…" autocomplete="off"><div id="search-results" class="suggestion-container" aria-live="polite"></div><p class="sample-note">在当前示例笔记内跳转 · Esc 关闭</p></dialog>
+</body>
+</html>

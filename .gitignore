@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+dist/
+*.zip
+.playwright-mcp/
+.obsidian/
+.env
+.env.*

@@ -1,0 +1,37 @@
+name: Release Obsidian theme
+
+on:
+  push:
+    tags: ["*.*.*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run check
+      - name: Verify release tag
+        run: python3 scripts/validate-theme.py --tag "$GITHUB_REF_NAME"
+      - run: npm run package
+      - name: Publish release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="$(node -p 'JSON.parse(require("fs").readFileSync("manifest.json", "utf8")).version')"
+          if gh release view "$version" >/dev/null 2>&1; then
+            gh release upload "$version" manifest.json theme.css "dist/Duskstone-$version.zip" --clobber
+          else
+            gh release create "$version" \
+              --verify-tag \
+              --title "Duskstone $version" \
+              --generate-notes \
+              manifest.json theme.css "dist/Duskstone-$version.zip"
+          fi

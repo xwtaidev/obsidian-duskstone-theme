@@ -1,0 +1,19 @@
+{
+  "name": "obsidian-duskstone-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Warm taupe, charcoal and quiet contrast for Obsidian.",
+  "license": "MIT",
+  "scripts": {
+    "lint": "stylelint theme.css --max-warnings 0",
+    "check": "npm run lint && python3 scripts/validate-theme.py && node --check preview/preview.js",
+    "package": "python3 scripts/package-theme.py"
+  },
+  "devDependencies": {
+    "stylelint": "^17.0.0",
+    "stylelint-config-obsidianmd": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

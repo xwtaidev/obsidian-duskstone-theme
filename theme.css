@@ -1,0 +1,437 @@
+/*
+ * Duskstone — warm taupe, charcoal and quiet contrast.
+ * An independent Obsidian theme by xwtaidev.
+ * Palette reference: Tatsze's Nights Like This Chrome theme, version 0.2.1.
+ * Original reference colors: frame #30343e, toolbar #d2c9bf,
+ * inactive tab text #ebebeb. Dark mode and semantic colors are adaptations.
+ * No remote resources or required plugins. MIT © 2026 xwtaidev.
+ */
+
+/* Day: the original warm taupe page inside a charcoal frame. */
+body.theme-light {
+  color-scheme: light;
+
+  --color-base-00: #d2c9bf;
+  --color-base-05: #cec5bb;
+  --color-base-10: #c9c0b6;
+  --color-base-20: #c3bab0;
+  --color-base-25: #bbb2a9;
+  --color-base-30: #afa79e;
+  --color-base-35: #a29b94;
+  --color-base-40: #938d87;
+  --color-base-50: #817c77;
+  --color-base-60: #6d6965;
+  --color-base-70: #595957;
+  --color-base-100: #292d35;
+  --accent-h: 218;
+  --accent-s: 17%;
+  --accent-l: 31%;
+  --duskstone-frame: #30343e;
+  --duskstone-frame-text: #ebebeb;
+  --duskstone-frame-muted: #bbbcc1;
+  --duskstone-frame-hover: #424752;
+  --background-primary: #d2c9bf;
+  --background-primary-alt: #ddd5cc;
+  --background-secondary: #c9c0b6;
+  --background-secondary-alt: #c3bab0;
+  --background-modifier-border: #b6ada3;
+  --background-modifier-border-hover: #938d87;
+  --background-modifier-form-field: #e4ddd5;
+  --background-modifier-box-shadow: #30343e1a;
+  --background-modifier-cover: #24283280;
+  --background-modifier-message: #ddd5cc;
+  --text-normal: #292d35;
+  --text-muted: #45474d;
+  --text-faint: #4d4947;
+  --text-on-accent: #f4efe9;
+  --text-on-accent-inverted: #292d35;
+  --text-highlight-bg: #b5a18a66;
+  --text-highlight-bg-active: #b5a18a99;
+  --interactive-normal: #ded6cd;
+  --interactive-hover: #e9e2da;
+  --scrollbar-bg: #30343e08;
+  --scrollbar-thumb-bg: #30343e30;
+  --scrollbar-active-thumb-bg: #30343e55;
+  --shadow-s: 0 2px 8px #30343e12;
+  --shadow-l: 0 16px 56px #30343e30;
+  --highlight-mix-blend-mode: multiply;
+  --color-red: #8c403c;
+  --color-red-rgb: 140, 64, 60;
+  --color-orange: #79512f;
+  --color-orange-rgb: 121, 81, 47;
+  --color-yellow: #6e592b;
+  --color-yellow-rgb: 110, 89, 43;
+  --color-green: #445e4c;
+  --color-green-rgb: 68, 94, 76;
+  --color-cyan: #3d6063;
+  --color-cyan-rgb: 61, 96, 99;
+  --color-blue: #435c78;
+  --color-blue-rgb: 67, 92, 120;
+  --color-purple: #695572;
+  --color-purple-rgb: 105, 85, 114;
+  --color-pink: #805463;
+  --color-pink-rgb: 128, 84, 99;
+}
+
+/* Night: the original frame becomes the page, taupe becomes the ink. */
+body.theme-dark {
+  color-scheme: dark;
+
+  --color-base-00: #30343e;
+  --color-base-05: #323640;
+  --color-base-10: #363a44;
+  --color-base-20: #3b3f49;
+  --color-base-25: #424650;
+  --color-base-30: #4c505a;
+  --color-base-35: #585c65;
+  --color-base-40: #666971;
+  --color-base-50: #7b7d83;
+  --color-base-60: #a19e9b;
+  --color-base-70: #b9b3ad;
+  --color-base-100: #e5dfd8;
+  --accent-h: 32;
+  --accent-s: 26%;
+  --accent-l: 69%;
+  --duskstone-frame: #252932;
+  --duskstone-frame-text: #ebebeb;
+  --duskstone-frame-muted: #b9b3ad;
+  --duskstone-frame-hover: #3b3f49;
+  --background-primary: #30343e;
+  --background-primary-alt: #383c46;
+  --background-secondary: #2b2f39;
+  --background-secondary-alt: #252932;
+  --background-modifier-border: #494d57;
+  --background-modifier-border-hover: #666971;
+  --background-modifier-form-field: #292d36;
+  --background-modifier-box-shadow: #171a214d;
+  --background-modifier-cover: #171a21b3;
+  --background-modifier-message: #383c46;
+  --text-normal: #e5dfd8;
+  --text-muted: #b9b3ad;
+  --text-faint: #a19e9b;
+  --text-on-accent: #252932;
+  --text-on-accent-inverted: #e5dfd8;
+  --text-highlight-bg: #b5a18a40;
+  --text-highlight-bg-active: #b5a18a66;
+  --interactive-normal: #3b3f49;
+  --interactive-hover: #464a54;
+  --scrollbar-bg: #d2c9bf08;
+  --scrollbar-thumb-bg: #d2c9bf30;
+  --scrollbar-active-thumb-bg: #d2c9bf55;
+  --shadow-s: 0 2px 8px #171a2133;
+  --shadow-l: 0 16px 56px #171a2173;
+  --highlight-mix-blend-mode: lighten;
+  --color-red: #dda29b;
+  --color-red-rgb: 221, 162, 155;
+  --color-orange: #d3ac85;
+  --color-orange-rgb: 211, 172, 133;
+  --color-yellow: #cebc8d;
+  --color-yellow-rgb: 206, 188, 141;
+  --color-green: #a9bfab;
+  --color-green-rgb: 169, 191, 171;
+  --color-cyan: #a3bdc0;
+  --color-cyan-rgb: 163, 189, 192;
+  --color-blue: #a9bbd1;
+  --color-blue-rgb: 169, 187, 209;
+  --color-purple: #c1adc9;
+  --color-purple-rgb: 193, 173, 201;
+  --color-pink: #d0adb9;
+  --color-pink-rgb: 208, 173, 185;
+}
+
+/* Match the native theme scope so dark-mode defaults cannot override these.
+ * RGB semantic companions support 1.10–1.12 callouts and Canvas.
+ * Accent derives from Obsidian's picker; no hardcoded --color-accent.
+ */
+body.theme-light,
+body.theme-dark {
+  --font-text-theme: -apple-system, blinkmacsystemfont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-monospace-theme: "SFMono-Regular", consolas, "Liberation Mono", monospace;
+  --file-line-width: 44rem;
+  --line-height-normal: 1.75;
+  --line-height-tight: 1.4;
+  --p-spacing: 1rem;
+  --radius-s: 5px;
+  --radius-m: 8px;
+  --radius-l: 10px;
+  --radius-xl: 14px;
+  --input-radius: 6px;
+  --button-radius: 6px;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --background-modifier-hover: color-mix(in srgb, var(--text-normal) 6%, transparent);
+  --background-modifier-active-hover: color-mix(in srgb, var(--text-normal) 10%, transparent);
+  --background-modifier-border-focus: var(--color-accent);
+  --background-modifier-success: var(--color-green);
+  --background-modifier-error: var(--color-red);
+  --background-modifier-error-hover: color-mix(in srgb, var(--color-red) 88%, var(--text-normal));
+  --text-error: var(--color-red);
+  --text-warning: var(--color-orange);
+  --text-success: var(--color-green);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: color-mix(in srgb, var(--color-accent) 82%, var(--text-normal));
+  --text-selection: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--text-accent-hover);
+  --caret-color: var(--text-normal);
+  --h1-size: 1.95em;
+  --h2-size: 1.45em;
+  --h3-size: 1.2em;
+  --h4-size: 1.08em;
+  --h5-size: 1em;
+  --h6-size: 0.95em;
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-muted);
+  --h1-weight: 650;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --inline-title-size: 2.15em;
+  --inline-title-weight: 650;
+  --inline-title-color: var(--text-normal);
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-decoration: underline;
+  --link-external-decoration: underline;
+  --link-unresolved-color: var(--text-muted);
+  --link-unresolved-opacity: 1;
+  --link-unresolved-decoration-style: dashed;
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-normal);
+  --tag-background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  --tag-background-hover: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  --tag-border-width: 1px;
+  --tag-border-color: color-mix(in srgb, var(--color-accent) 25%, transparent);
+  --tag-radius: 5px;
+  --tag-size: 0.8em;
+  --nav-item-radius: 6px;
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-background-active: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  --nav-item-background-selected: var(--nav-item-background-active);
+  --nav-item-weight-active: 600;
+  --nav-collapse-icon-color: var(--text-faint);
+  --nav-indentation-guide-color: var(--background-modifier-border);
+  --indentation-guide-color: var(--background-modifier-border);
+  --indentation-guide-color-active: var(--color-accent);
+  --titlebar-background: var(--duskstone-frame);
+  --titlebar-background-focused: var(--duskstone-frame);
+  --titlebar-text-color: var(--duskstone-frame-muted);
+  --titlebar-text-color-focused: var(--duskstone-frame-text);
+  --ribbon-background: var(--duskstone-frame);
+  --ribbon-background-collapsed: var(--duskstone-frame);
+  --tab-container-background: var(--duskstone-frame);
+  --tab-background-active: var(--background-primary);
+  --tab-text-color: var(--duskstone-frame-text);
+  --tab-text-color-focused: var(--duskstone-frame-text);
+  --tab-text-color-focused-highlighted: var(--duskstone-frame-text);
+  --tab-text-color-active: var(--text-normal);
+  --tab-text-color-focused-active: var(--text-normal);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --tab-divider-color: transparent;
+  --tab-outline-color: transparent;
+  --tab-radius-active: 10px 10px 0 0;
+  --divider-color: var(--background-modifier-border);
+  --divider-color-hover: var(--color-accent);
+  --status-bar-background: var(--background-secondary);
+  --status-bar-text-color: var(--text-muted);
+  --status-bar-border-color: var(--background-modifier-border);
+  --status-bar-radius: 0;
+  --modal-background: var(--background-primary);
+  --modal-border-color: var(--background-modifier-border);
+  --modal-radius: 12px;
+  --modal-shadow: var(--shadow-l);
+  --prompt-background: var(--background-primary);
+  --prompt-border-color: var(--background-modifier-border);
+  --menu-background: var(--background-primary-alt);
+  --menu-border-color: var(--background-modifier-border);
+  --search-result-background: var(--background-primary-alt);
+  --search-result-file-matched-color: var(--text-normal);
+  --search-result-file-matched-bg: var(--text-highlight-bg);
+  --blockquote-border-thickness: 2px;
+  --blockquote-border-color: var(--color-accent);
+  --blockquote-background-color: color-mix(in srgb, var(--color-accent) 5%, transparent);
+  --blockquote-color: var(--text-muted);
+  --blockquote-font-style: normal;
+  --callout-radius: 8px;
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.25;
+  --callout-blend-mode: normal;
+  --checkbox-radius: 4px;
+  --checkbox-color: var(--color-accent);
+  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-marker-color: var(--text-on-accent);
+  --checklist-done-color: var(--text-faint);
+  --hr-color: var(--background-modifier-border);
+  --hr-thickness: 1px;
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-blue);
+  --code-keyword: var(--color-purple);
+  --code-operator: var(--text-muted);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-orange);
+  --code-border-color: var(--background-modifier-border);
+  --code-border-width: 1px;
+  --code-radius: 6px;
+  --table-border-color: var(--background-modifier-border);
+  --table-header-background: color-mix(in srgb, var(--text-normal) 4%, transparent);
+  --table-header-background-hover: var(--background-modifier-hover);
+  --table-header-color: var(--text-normal);
+  --table-row-background-hover: var(--background-modifier-hover);
+  --table-selection: var(--text-selection);
+  --table-selection-border-color: var(--color-accent);
+  --metadata-label-text-color: var(--text-muted);
+  --metadata-label-text-color-hover: var(--text-normal);
+  --metadata-border-color: var(--background-modifier-border);
+  --metadata-property-radius: 5px;
+  --graph-background: var(--background-primary);
+  --graph-line: var(--background-modifier-border-hover);
+  --graph-node: var(--text-muted);
+  --graph-node-focused: var(--color-accent);
+  --graph-node-tag: var(--color-green);
+  --graph-node-attachment: var(--color-blue);
+  --graph-node-unresolved: var(--text-faint);
+  --graph-text: var(--text-muted);
+  --canvas-background: var(--background-primary);
+  --canvas-dot-pattern: var(--background-modifier-border);
+  --canvas-card-label-color: var(--text-muted);
+}
+
+/* The light theme has dark chrome: scope icon tokens to that chrome only.
+ * Menus and note actions keep the page's own colors. No layout overrides.
+ */
+.workspace-ribbon,
+.workspace-tab-header-container {
+  --icon-color: var(--duskstone-frame-muted);
+  --icon-color-hover: var(--duskstone-frame-text);
+  --icon-color-active: var(--duskstone-frame-text);
+  --icon-color-focused: var(--duskstone-frame-text);
+  --background-modifier-hover: var(--duskstone-frame-hover);
+}
+
+.workspace-ribbon .side-dock-ribbon-action,
+.workspace-tab-header-new-tab,
+.workspace-tab-header-tab-list {
+  color: var(--duskstone-frame-muted);
+}
+
+.workspace-ribbon .side-dock-ribbon-action:hover,
+.workspace-ribbon .side-dock-ribbon-action.is-active {
+  color: var(--duskstone-frame-text);
+  background-color: var(--duskstone-frame-hover);
+}
+
+.mod-root .workspace-tab-header.is-active {
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--text-normal);
+  --tab-text-color-focused-highlighted: var(--text-accent);
+  --background-modifier-hover: color-mix(in srgb, var(--text-normal) 8%, transparent);
+}
+
+/* Sidebar tabs are transparent in native Obsidian, including active tabs. */
+.mod-left-split .workspace-tab-header-container,
+.mod-right-split .workspace-tab-header-container {
+  --tab-text-color-active: var(--duskstone-frame-text);
+  --tab-text-color-focused-active: var(--duskstone-frame-text);
+  --tab-text-color-focused-active-current: var(--duskstone-frame-text);
+}
+
+/* Round the primary sidebar's content into the dark frame. The container
+ * already clips its children; keep resize handles and mobile drawers native.
+ * Obsidian 1.14 renamed mod-left-split to mod-primary-split.
+ */
+body:not(.is-mobile) .workspace-split:is(.mod-left-split, .mod-primary-split) > .workspace-tabs > .workspace-tab-container {
+  border-start-start-radius: var(--radius-l);
+}
+
+/* With the primary sidebar closed, the main pane becomes the exposed edge.
+ * Give the clipped corner the same dark backing as the tab strip.
+ */
+body:not(.is-mobile) .workspace > .workspace-split:is(.mod-left-split, .mod-primary-split).is-sidedock-collapsed ~ .mod-root > .workspace-tabs {
+  background-color: var(--duskstone-frame);
+}
+
+body:not(.is-mobile) .workspace > .workspace-split:is(.mod-left-split, .mod-primary-split).is-sidedock-collapsed ~ .mod-root > .workspace-tabs > .workspace-tab-container {
+  border-start-start-radius: var(--radius-l);
+}
+
+/* The ribbon's straight divider otherwise shows through the rounded cutout.
+ * Keep its width so the sidebar and its controls do not shift.
+ */
+body:not(.is-mobile) .workspace-ribbon:is(.mod-left, .mod-primary) {
+  border-inline-end-color: transparent;
+}
+
+/* Frameless windows extend this divider through the tab strip by default.
+ * Start it below the strip so the active tab's curve stays uninterrupted.
+ */
+body:not(.is-mobile) .workspace-split:is(.mod-left-split, .mod-primary-split) > .workspace-leaf-resize-handle {
+  height: calc(100% - var(--header-height));
+}
+
+.markdown-rendered a,
+.cm-hmd-internal-link,
+.cm-link {
+  text-underline-offset: 0.18em;
+}
+
+/* Keep headings/selection native in both Live Preview and source mode. */
+.markdown-rendered blockquote {
+  margin-inline: 0;
+  padding: 0.5em 1em;
+  border-radius: 0 6px 6px 0;
+}
+
+.markdown-rendered blockquote > :first-child { margin-top: 0; }
+.markdown-rendered blockquote > :last-child { margin-bottom: 0; }
+.markdown-rendered :not(pre) > code { padding: 0.12em 0.3em; }
+
+@media print {
+  body.theme-light,
+  body.theme-dark {
+    color-scheme: light;
+
+    --background-primary: #fff;
+    --background-primary-alt: #f5f5f5;
+    --background-secondary: #fff;
+    --text-normal: #292d35;
+    --text-muted: #53545a;
+    --text-faint: #65615f;
+    --text-on-accent: #f4efe9;
+    --text-on-accent-inverted: #292d35;
+    --color-accent: #414b5c;
+    --background-modifier-border: #b6ada3;
+    --text-highlight-bg: #e3d9cb;
+    --color-blue: #435c78;
+    --color-blue-rgb: 67, 92, 120;
+    --color-green: #445e4c;
+    --color-green-rgb: 68, 94, 76;
+    --color-purple: #695572;
+    --color-purple-rgb: 105, 85, 114;
+    --color-orange: #79512f;
+    --color-orange-rgb: 121, 81, 47;
+    --color-red: #8c403c;
+    --color-red-rgb: 140, 64, 60;
+    --color-cyan: #3d6063;
+    --color-cyan-rgb: 61, 96, 99;
+    --color-yellow: #6e592b;
+    --color-yellow-rgb: 110, 89, 43;
+    --color-pink: #805463;
+    --color-pink-rgb: 128, 84, 99;
+    --highlight-mix-blend-mode: multiply;
+  }
+}
